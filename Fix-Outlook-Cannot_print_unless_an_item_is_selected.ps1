@@ -9,7 +9,7 @@ Summary:
   See the following link for more information:
     https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=96554
 #>
-
+echo "Script Starting: Fix-Outlook-Cannot_print_unless_an_item_is_selected.ps1"
 $rootdirectory = "C:\Users\"
 $user = $env:UserName
 $subfolder = "\AppData\Roaming\Microsoft\Outlook\"
@@ -28,3 +28,4 @@ if (Test-Path -Path "$originalfilename") {
 } else {
   echo "$filename does not exist"
 }
+echo "Script Finished: Fix-Outlook-Cannot_print_unless_an_item_is_selected.ps1"
